@@ -1,0 +1,14 @@
+# encoding: utf-8
+# 2021 R1
+SetScriptVersion(Version="21.1.216")
+template1 = GetTemplate(TemplateName="FLUENT")
+system1 = GetSystem(Name="SYS")
+meshComponent1 = system1.GetComponent(Name="Mesh")
+componentTemplate1 = GetComponentTemplate(Name="FluentSetupCellTemplate")
+system2 = template1.CreateSystem(
+    DataTransferFrom=[Set(FromComponent=meshComponent1, TransferName=None, ToComponentTemplate=componentTemplate1)],
+    Position="Right",
+    RelativeTo=system1)
+setupComponent1 = system2.GetComponent(Name="Setup")
+setupComponent1.Refresh()
+meshComponent1.Update(AllDependencies=True)
