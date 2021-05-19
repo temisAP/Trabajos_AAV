@@ -78,7 +78,7 @@ Cell Zone Conditions
 
          Condition       Value   
          ---------------------
-         Frame Motion?   no      
+         Frame Motion?   #f      
 
 </CellZoneConditions>
 
@@ -143,14 +143,14 @@ Solver Settings
 
       Equation     Solved   
       -------------------
-      Flow         yes      
-      Turbulence   yes      
+      Flow         #t       
+      Turbulence   #t       
 
    Numerics
 
       Numeric                         Enabled   
       ---------------------------------------
-      Absolute Velocity Formulation   yes       
+      Absolute Velocity Formulation   #t        
 
    Under-Relaxation Factors
 
