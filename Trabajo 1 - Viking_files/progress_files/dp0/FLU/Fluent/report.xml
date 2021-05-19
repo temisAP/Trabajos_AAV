@@ -104,6 +104,8 @@ Boundary Conditions
          Gauge Pressure [Pa]              1951                         
          Mach Number                      10                           
          Temperature [C]                  -215                         
+         X-Component of Flow Direction    0.76604443                   
+         Y-Component of Flow Direction    0.64278761                   
          Turbulent Specification Method   Intensity and Length Scale   
          Turbulent Intensity [%]          0.01                         
          Turbulent Length Scale [m]       0.001                        
