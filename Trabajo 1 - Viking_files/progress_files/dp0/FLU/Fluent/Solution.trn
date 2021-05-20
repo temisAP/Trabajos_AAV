@@ -1,0 +1,145 @@
+
+Build Time: Nov 20 2020 15:49:04 EST 
+Executable Path: D:/Archivos_de_programa/ANSYS/ANSYS Inc/ANSYS Student/v211/fluent/ntbin/win64/fluent.exe
+
+-------------------------------------------------------------------------------
+ID    Hostname  Core  O.S.         PID    Vendor                          
+-------------------------------------------------------------------------------
+n2    temis     3/8  Windows-x64  5348   Intel(R) Core(TM) i7-8550U      
+n1    temis     2/8  Windows-x64  12468  Intel(R) Core(TM) i7-8550U      
+n0*   temis     1/8  Windows-x64  15224  Intel(R) Core(TM) i7-8550U      
+host  temis          Windows-x64  8420   Intel(R) Core(TM) i7-8550U      
+
+MPI Option Selected: intel
+Selected system interconnect: default
+-------------------------------------------------------------------------------
+Fast-loading "D:\Archivos_de_programa\ANSYS\ANSYS Inc\ANSYS Student\v211\fluent\fluent21.1.0\\addons\afd\lib\hdfio.bin"
+Done.
+
+Reading from temis:"D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU\Fluent\SYS-Setup-Output.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+      425680 cells,     1 cell zone  ...
+         425680 mixed cells,  zone id: 2
+      930811 faces,     5 face zones ...
+         911589 mixed interior faces,  zone id: 1
+           9430 mixed symmetry faces,  zone id: 5
+           6984 triangular wall faces,  zone id: 6
+           1424 triangular velocity-inlet faces,  zone id: 7
+           1384 triangular pressure-outlet faces,  zone id: 8
+      123445 nodes,     1 node zone  ...
+  Done.
+
+
+
+Building...
+     mesh
+	distributing mesh
+		parts...,
+		faces...,
+		nodes...,
+		cells...,
+        bandwidth reduction using Reverse Cuthill-McKee: 149520/2649 = 56.4439
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	outlet
+	inlet
+	capsula
+	symmetry
+	interior-solid
+	solidSetting solid (mixture) ... Done.
+ Setting zone id of solid to 2.
+ Setting zone id of interior-solid to 1.
+ Setting zone id of symmetry to 5.
+ Setting zone id of capsula to 6.
+ Setting zone id of inlet to 7.
+ Setting zone id of outlet to 8.
+Done.
+Setting solid (mixture) ... Done.
+Setting interior-solid (mixture) ... Done.
+Setting symmetry (mixture) ... Done.
+Setting capsula (mixture) ... Done.
+Setting inlet (mixture) ... Done.
+Setting outlet (mixture) ... Done.
+
+     parallel,
+Done.
+
+Preparing mesh for display...
+Done.
+"Updating Setup cell..."
+"Updating Solution cell..."
+Reading D:\\0_Andres\\1_Universidad\\MUSE\\AAV\\Trabajos_AAV\\Trabajo 1 - Viking_files\\dp0\\FLU\\Fluent\\SYS.ip...
+Reading IP data ...
+	x-coord
+	y-coord
+	z-coord
+	pressure
+	x-velocity
+	y-velocity
+	z-velocity
+	temperature
+	k
+	omega
+	hyb_init-0
+	hyb_init-1
+  Done.
+  Initializing values...
+  Done.
+
+ turbulent viscosity limited to viscosity ratio of 1.000000e+05 in 425680 cells 
+
+ turbulent viscosity limited to viscosity ratio of 1.000000e+05 in 425680 cells 
+Writing data to D:\\0_Andres\\1_Universidad\\MUSE\\AAV\\Trabajos_AAV\\Trabajo 1 - Viking_files\\dp0\\FLU\\Fluent\\SYS.ip ...
+	x-coord
+	y-coord
+	z-coord
+	pressure
+	x-velocity
+	y-velocity
+	z-velocity
+	temperature
+	k
+	omega
+	hyb_init-0
+	hyb_init-1
+Done.
+("Unable to update solution. Number of iterations should be greater than zero.")
+
+Error: Unable to update solution. Number of iterations should be greater than zero.
+Error Object: #f
+
+Writing to temis:"D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU\Fluent\SYS-1.cas.h5" in NODE0 mode and compression level 1 ...
+  Writing mesh ...
+      425680 cells,     1 zone  ...
+      930811 faces,     5 zones ...
+      123445 nodes,     1 zone  ...
+  Done.
+Done.
+
+Writing to temis:"D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU\Fluent\SYS-1-00000.dat.h5" in NODE0 mode and compression level 1 ...
+  Writing results.
+Done.
+
+Performance Timer for 0 iterations on 3 compute nodes
+  Average wall-clock time per iteration:              0.000 sec
+  Global reductions per iteration:                        0 ops
+  Global reductions time per iteration:               0.000 sec (0.0%)
+  Message count per iteration:                            0 messages
+  Data transfer per iteration:                        0.000 MB
+  LE solves per iteration:                                0 solves
+  LE wall-clock time per iteration:                   0.000 sec (0.0%)
+  LE global solves per iteration:                         0 solves
+  LE global wall-clock time per iteration:            0.000 sec (0.0%)
+  LE global matrix maximum size:                         0
+  AMG cycles per iteration:                           0.000 cycles
+  Relaxation sweeps per iteration:                        0 sweeps
+  Relaxation exchanges per iteration:                     0 exchanges
+  LE early protections (stall) per iteration:           0.000 times
+  LE early protections (divergence) per iteration:      0.000 times
+  Total SVARS touched:                              360
+
+  Total wall-clock time:                              0.000 sec
+

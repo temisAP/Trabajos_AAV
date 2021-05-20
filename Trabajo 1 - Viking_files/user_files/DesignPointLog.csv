@@ -1,0 +1,24 @@
+﻿# 
+# This file contains the parameter values of the Design Points successfully updated by ANSYS Workbench.
+# Project name: Trabajo 1 - Viking
+# Creation date: 05/20/2021 08:32:53
+# 
+# 05/20/2021 08:32:53
+# The parameters defined in the project are:
+# ,P7 - cl-op,P6 - cd-op,P3 - cm-op,P8 - p_max-op [Pa],P9 - t_max-op [K]
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P7,P6,P3,P8,P9
+DP 0,0.61922812,1.3096253,0.076487891,259479.83,2617.8713
+# 
+# A non parametric change occurred and invalidated design point results.
+# 05/20/2021 08:51:12
+# 
+# 
+# A non parametric change occurred and invalidated design point results.
+# 05/20/2021 09:00:02
+# 
+# 
+# A non parametric change occurred and invalidated design point results.
+# 05/20/2021 12:22:57
+# 
