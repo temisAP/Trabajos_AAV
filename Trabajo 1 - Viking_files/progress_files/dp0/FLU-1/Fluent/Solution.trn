@@ -1,0 +1,103 @@
+
+Transcript file has been opened in append mode. Time stamp=Wed May 19 21:33:24 2021.
+
+Build Time: Nov 20 2020 15:49:04 EST 
+Executable Path: D:/SOFTWARE/ANSYS_Student_2021_R1/ANSYS Inc/ANSYS Student/v211/fluent/ntbin/win64/fluent.exe
+
+----------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                           
+----------------------------------------------------------------------------------
+n2    DESKTOP-99IT6RQ  3/8  Windows-x64  14736  Intel(R) Core(TM) i7-6700HQ      
+n1    DESKTOP-99IT6RQ  2/8  Windows-x64  11040  Intel(R) Core(TM) i7-6700HQ      
+n0*   DESKTOP-99IT6RQ  1/8  Windows-x64  9896   Intel(R) Core(TM) i7-6700HQ      
+host  DESKTOP-99IT6RQ       Windows-x64  4380   Intel(R) Core(TM) i7-6700HQ      
+
+MPI Option Selected: intel
+Selected system interconnect: default
+----------------------------------------------------------------------------------
+Fast-loading "D:\SOFTWARE\ANSYS_Student_2021_R1\ANSYS Inc\ANSYS Student\v211\fluent\fluent21.1.0\\addons\afd\lib\hdfio.bin"
+Done.
+
+Reading from DESKTOP-99IT6RQ:"D:\ETSIAE\MUSE\2 SEMESTRE\FLUENT\Trabajo 1 - Viking_files\dp0\FLU-1\Fluent\SYS-1-Setup-Output.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+      428793 cells,     1 cell zone  ...
+         428793 mixed cells,  zone id: 2
+      937037 faces,     5 face zones ...
+         917815 mixed interior faces,  zone id: 1
+           9430 mixed symmetry faces,  zone id: 5
+           6984 triangular wall faces,  zone id: 6
+           1424 triangular pressure-far-field faces,  zone id: 7
+           1384 triangular pressure-outlet faces,  zone id: 8
+      123871 nodes,     1 node zone  ...
+  Done.
+
+
+
+Building...
+     mesh
+	distributing mesh
+		parts...,
+		faces...,
+		nodes...,
+		cells...,
+        bandwidth reduction using Reverse Cuthill-McKee: 126901/2384 = 53.2303
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	outlet
+	capsula
+	symmetry
+	interior-solid
+	inlet
+	solidSetting solid (mixture) ... Done.
+ Setting zone id of solid to 2.
+ Setting zone id of inlet to 7.
+ Setting zone id of interior-solid to 1.
+ Setting zone id of symmetry to 5.
+ Setting zone id of capsula to 6.
+ Setting zone id of outlet to 8.
+Done.
+Setting solid (mixture) ... Done.
+Setting inlet (mixture) ... Done.
+Setting interior-solid (mixture) ... Done.
+Setting symmetry (mixture) ... Done.
+Setting capsula (mixture) ... Done.
+Setting outlet (mixture) ... Done.
+
+     parallel,
+Done.
+
+Preparing mesh for display...
+Done.
+
+Reading from DESKTOP-99IT6RQ:"D:\ETSIAE\MUSE\2 SEMESTRE\FLUENT\Trabajo 1 - Viking_files\dp0\FLU-1\Fluent\SYS-1-2-02007.dat.h5" in NODE0 mode ...
+
+
+  Reading results.
+Parallel variables...
+
+ turbulent viscosity limited to viscosity ratio of 1.000000e+05 in 86 cells 
+Done.
+
+  iter          cd          cl          cm     time/iter
+  2007  1.5671e+00  1.8146e-04 -4.8726e-04  0:00:00  993
+
+ turbulent viscosity limited to viscosity ratio of 1.000000e+05 in 103 cells 
+  2008  1.5671e+00  1.8233e-04 -4.8533e-04  0:33:04  992
+
+ turbulent viscosity limited to viscosity ratio of 1.000000e+05 in 115 cells 
+  2009  1.5672e+00  1.8325e-04 -4.8340e-04  0:33:02  991
+
+ turbulent viscosity limited to viscosity ratio of 1.000000e+05 in 108 cells 
+  2010  1.5672e+00  1.8418e-04 -4.8158e-04  0:29:42  990
+
+ turbulent viscosity limited to viscosity ratio of 1.000000e+05 in 99 cells 
+  2011  1.5672e+00  1.8504e-04 -4.7967e-04  0:30:20  989
+
+ turbulent viscosity limited to viscosity ratio of 1.000000e+05 in 104 cells 
+  2012  1.5672e+00  1.8599e-04 -4.7786e-04  0:27:32  988
+
+ turbulent viscosity limited to viscosity ratio of 1.000000e+05 in 99 cells 
+  2013  1.5672e+00  1.8684e-04 -4.7601e-04  0:28:35  987
