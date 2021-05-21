@@ -5,10 +5,10 @@ Executable Path: D:/Archivos_de_programa/ANSYS/ANSYS Inc/ANSYS Student/v211/flue
 -------------------------------------------------------------------------------
 ID    Hostname  Core  O.S.         PID    Vendor                          
 -------------------------------------------------------------------------------
-n2    temis     3/8  Windows-x64  5348   Intel(R) Core(TM) i7-8550U      
-n1    temis     2/8  Windows-x64  12468  Intel(R) Core(TM) i7-8550U      
-n0*   temis     1/8  Windows-x64  15224  Intel(R) Core(TM) i7-8550U      
-host  temis          Windows-x64  8420   Intel(R) Core(TM) i7-8550U      
+n2    temis     3/8  Windows-x64  13424  Intel(R) Core(TM) i7-8550U      
+n1    temis     2/8  Windows-x64  6348   Intel(R) Core(TM) i7-8550U      
+n0*   temis     1/8  Windows-x64  16188  Intel(R) Core(TM) i7-8550U      
+host  temis          Windows-x64  10924  Intel(R) Core(TM) i7-8550U      
 
 MPI Option Selected: intel
 Selected system interconnect: default
@@ -16,17 +16,17 @@ Selected system interconnect: default
 Fast-loading "D:\Archivos_de_programa\ANSYS\ANSYS Inc\ANSYS Student\v211\fluent\fluent21.1.0\\addons\afd\lib\hdfio.bin"
 Done.
 
-Reading from temis:"D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU\Fluent\SYS-Setup-Output.cas.h5" in NODE0 mode ...
+Reading from temis:"D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU\Fluent\SYS.1-Setup-Output.cas.h5" in NODE0 mode ...
   Reading mesh ...
-      425680 cells,     1 cell zone  ...
-         425680 mixed cells,  zone id: 2
-      930811 faces,     5 face zones ...
-         911589 mixed interior faces,  zone id: 1
-           9430 mixed symmetry faces,  zone id: 5
-           6984 triangular wall faces,  zone id: 6
-           1424 triangular velocity-inlet faces,  zone id: 7
-           1384 triangular pressure-outlet faces,  zone id: 8
-      123445 nodes,     1 node zone  ...
+      425720 cells,     1 cell zone  ...
+         425720 mixed cells,  zone id: 2
+      930460 faces,     5 face zones ...
+         911200 mixed interior faces,  zone id: 1
+           9503 mixed symmetry faces,  zone id: 5
+           6939 triangular wall faces,  zone id: 6
+           1424 triangular pressure-far-field faces,  zone id: 7
+           1394 triangular pressure-outlet faces,  zone id: 8
+      123143 nodes,     1 node zone  ...
   Done.
 
 
@@ -38,108 +38,102 @@ Building...
 		faces...,
 		nodes...,
 		cells...,
-        bandwidth reduction using Reverse Cuthill-McKee: 149520/2649 = 56.4439
+        bandwidth reduction using Reverse Cuthill-McKee: 149118/2513 = 59.3386
      materials,
      interface,
      domains,
 	mixture
      zones,
-	outlet
-	inlet
 	capsula
 	symmetry
 	interior-solid
+	inlet
+	outlet
 	solidSetting solid (mixture) ... Done.
  Setting zone id of solid to 2.
+ Setting zone id of outlet to 8.
+ Setting zone id of inlet to 7.
  Setting zone id of interior-solid to 1.
  Setting zone id of symmetry to 5.
  Setting zone id of capsula to 6.
- Setting zone id of inlet to 7.
- Setting zone id of outlet to 8.
 Done.
 Setting solid (mixture) ... Done.
+Setting outlet (mixture) ... Done.
+Setting inlet (mixture) ... Done.
 Setting interior-solid (mixture) ... Done.
 Setting symmetry (mixture) ... Done.
 Setting capsula (mixture) ... Done.
-Setting inlet (mixture) ... Done.
-Setting outlet (mixture) ... Done.
 
      parallel,
 Done.
 
 Preparing mesh for display...
 Done.
-"Updating Setup cell..."
-"Updating Solution cell..."
-Reading D:\\0_Andres\\1_Universidad\\MUSE\\AAV\\Trabajos_AAV\\Trabajo 1 - Viking_files\\dp0\\FLU\\Fluent\\SYS.ip...
-Reading IP data ...
-	x-coord
-	y-coord
-	z-coord
-	pressure
-	x-velocity
-	y-velocity
-	z-velocity
-	temperature
-	k
-	omega
-	hyb_init-0
-	hyb_init-1
-  Done.
-  Initializing values...
-  Done.
 
- turbulent viscosity limited to viscosity ratio of 1.000000e+05 in 425680 cells 
+Reading from temis:"D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU\Fluent\SYS.1-1-02000.dat.h5" in NODE0 mode ...
 
- turbulent viscosity limited to viscosity ratio of 1.000000e+05 in 425680 cells 
-Writing data to D:\\0_Andres\\1_Universidad\\MUSE\\AAV\\Trabajos_AAV\\Trabajo 1 - Viking_files\\dp0\\FLU\\Fluent\\SYS.ip ...
-	x-coord
-	y-coord
-	z-coord
-	pressure
-	x-velocity
-	y-velocity
-	z-velocity
-	temperature
-	k
-	omega
-	hyb_init-0
-	hyb_init-1
+
+  Reading results.
+Parallel variables...
+
+ turbulent viscosity limited to viscosity ratio of 1.000000e+05 in 134432 cells 
 Done.
-("Unable to update solution. Number of iterations should be greater than zero.")
 
-Error: Unable to update solution. Number of iterations should be greater than zero.
-Error Object: #f
+  iter          cd          cl          cm       p_max       t_max     time/iter
+  2000  8.9618e-01  5.7896e-01 -5.7608e-02  1.9174e+05  1.0031e+03  0:00:00    1
 
-Writing to temis:"D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU\Fluent\SYS-1.cas.h5" in NODE0 mode and compression level 1 ...
+ turbulent viscosity limited to viscosity ratio of 1.000000e+05 in 134435 cells 
+  2001  8.9618e-01  5.7896e-01 -5.7609e-02  1.9175e+05  1.0024e+03  0:00:00    0
+Registering ReportDefFiles, ("D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU\Fluent\.\\t_max-rfile.out" "D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU\Fluent\.\\p_max-rfile.out" "D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU\Fluent\.\\cm-rfile.out" "D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU\Fluent\.\\cl-rfile.out" "D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU\Fluent\.\\cd-rfile.out")
+Writing "| gzip -2cf > SolutionMonitor.gz"...
+Writing temporary file C:\\Users\\temis\\AppData\\Local\\Temp\\flntgz-109242 ...
+Done.
+
+Cannot figure which cell particle is going to -- ABORT
+Cannot find intersecting face for particle 5619 step 86 -- ABORT at (3.533984e+00 1.015243e+00 -3.484241e-01) in cell 21707 , t-id 2, next_pos = (3.533984e+00 1.015243e+00 -3.484241e-01)
+number tracked = 19260, escaped = 17091, aborted = 1, incomplete = 2168
+Writing data to D:\\0_Andres\\1_Universidad\\MUSE\\AAV\\Trabajos_AAV\\Trabajo 1 - Viking_files\\dp0\\FLU\\Fluent\\SYS.1.ip ...
+	x-coord
+	y-coord
+	z-coord
+	pressure
+	x-velocity
+	y-velocity
+	z-velocity
+	temperature
+	k
+	omega
+Done.
+
+Writing to temis:"D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU\Fluent\SYS.1-2.cas.h5" in NODE0 mode and compression level 1 ...
   Writing mesh ...
-      425680 cells,     1 zone  ...
-      930811 faces,     5 zones ...
-      123445 nodes,     1 zone  ...
+      425720 cells,     1 zone  ...
+      930460 faces,     5 zones ...
+      123143 nodes,     1 zone  ...
   Done.
 Done.
 
-Writing to temis:"D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU\Fluent\SYS-1-00000.dat.h5" in NODE0 mode and compression level 1 ...
+Writing to temis:"D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU\Fluent\SYS.1-2-02001.dat.h5" in NODE0 mode and compression level 1 ...
   Writing results.
 Done.
 
-Performance Timer for 0 iterations on 3 compute nodes
-  Average wall-clock time per iteration:              0.000 sec
-  Global reductions per iteration:                        0 ops
+Performance Timer for 1 iterations on 3 compute nodes
+  Average wall-clock time per iteration:              1.906 sec
+  Global reductions per iteration:                      166 ops
   Global reductions time per iteration:               0.000 sec (0.0%)
-  Message count per iteration:                            0 messages
-  Data transfer per iteration:                        0.000 MB
-  LE solves per iteration:                                0 solves
-  LE wall-clock time per iteration:                   0.000 sec (0.0%)
-  LE global solves per iteration:                         0 solves
-  LE global wall-clock time per iteration:            0.000 sec (0.0%)
-  LE global matrix maximum size:                         0
-  AMG cycles per iteration:                           0.000 cycles
-  Relaxation sweeps per iteration:                        0 sweeps
+  Message count per iteration:                         1397 messages
+  Data transfer per iteration:                       20.987 MB
+  LE solves per iteration:                                3 solves
+  LE wall-clock time per iteration:                   0.727 sec (38.1%)
+  LE global solves per iteration:                         1 solves
+  LE global wall-clock time per iteration:            0.001 sec (0.1%)
+  LE global matrix maximum size:                        15
+  AMG cycles per iteration:                           3.000 cycles
+  Relaxation sweeps per iteration:                      140 sweeps
   Relaxation exchanges per iteration:                     0 exchanges
   LE early protections (stall) per iteration:           0.000 times
   LE early protections (divergence) per iteration:      0.000 times
-  Total SVARS touched:                              360
+  Total SVARS touched:                              383
 
-  Total wall-clock time:                              0.000 sec
+  Total wall-clock time:                              1.906 sec
 

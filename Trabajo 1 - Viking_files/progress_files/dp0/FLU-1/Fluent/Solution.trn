@@ -1,0 +1,137 @@
+
+Build Time: Nov 20 2020 15:49:04 EST 
+Executable Path: D:/Archivos_de_programa/ANSYS/ANSYS Inc/ANSYS Student/v211/fluent/ntbin/win64/fluent.exe
+
+-------------------------------------------------------------------------------
+ID    Hostname  Core  O.S.         PID    Vendor                          
+-------------------------------------------------------------------------------
+n2    temis     3/8  Windows-x64  8280   Intel(R) Core(TM) i7-8550U      
+n1    temis     2/8  Windows-x64  16680  Intel(R) Core(TM) i7-8550U      
+n0*   temis     1/8  Windows-x64  4892   Intel(R) Core(TM) i7-8550U      
+host  temis          Windows-x64  10604  Intel(R) Core(TM) i7-8550U      
+
+MPI Option Selected: intel
+Selected system interconnect: default
+-------------------------------------------------------------------------------
+Fast-loading "D:\Archivos_de_programa\ANSYS\ANSYS Inc\ANSYS Student\v211\fluent\fluent21.1.0\\addons\afd\lib\hdfio.bin"
+Done.
+
+Reading from temis:"D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU-1\Fluent\SYS-1.1-Setup-Output.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+      425730 cells,     1 cell zone  ...
+         425730 mixed cells,  zone id: 2
+      930098 faces,     5 face zones ...
+         910942 mixed interior faces,  zone id: 1
+           9440 mixed symmetry faces,  zone id: 5
+           6906 triangular wall faces,  zone id: 6
+           1424 triangular pressure-far-field faces,  zone id: 7
+           1386 triangular pressure-outlet faces,  zone id: 8
+      122897 nodes,     1 node zone  ...
+  Done.
+
+
+
+Building...
+     mesh
+	distributing mesh
+		parts...,
+		faces...,
+		nodes...,
+		cells...,
+        bandwidth reduction using Reverse Cuthill-McKee: 149303/2599 = 57.4463
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	capsula
+	symmetry
+	interior-solid
+	inlet
+	outlet
+	solidSetting solid (mixture) ... Done.
+ Setting zone id of solid to 2.
+ Setting zone id of outlet to 8.
+ Setting zone id of inlet to 7.
+ Setting zone id of interior-solid to 1.
+ Setting zone id of symmetry to 5.
+ Setting zone id of capsula to 6.
+Done.
+Setting solid (mixture) ... Done.
+Setting outlet (mixture) ... Done.
+Setting inlet (mixture) ... Done.
+Setting interior-solid (mixture) ... Done.
+Setting symmetry (mixture) ... Done.
+Setting capsula (mixture) ... Done.
+
+     parallel,
+Done.
+
+Preparing mesh for display...
+Done.
+
+Reading from temis:"D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU-1\Fluent\SYS-1.1-1-02001.dat.h5" in NODE0 mode ...
+
+
+  Reading results.
+Parallel variables...
+
+ turbulent viscosity limited to viscosity ratio of 1.000000e+05 in 123279 cells 
+Done.
+
+  iter          cd          cl          cm       p_max       t_max     time/iter
+  2001  7.7373e-01  5.3477e-01 -6.2351e-02  1.9277e+05  8.7771e+02  0:00:00    1
+
+ turbulent viscosity limited to viscosity ratio of 1.000000e+05 in 123280 cells 
+  2002  7.7373e-01  5.3477e-01 -6.2351e-02  1.9278e+05  8.7795e+02  0:00:00    0
+Registering ReportDefFiles, ("D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU-1\Fluent\.\\t_max-rfile.out" "D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU-1\Fluent\.\\p_max-rfile.out" "D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU-1\Fluent\.\\cm-rfile.out" "D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU-1\Fluent\.\\cl-rfile.out" "D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU-1\Fluent\.\\cd-rfile.out")
+Writing "| gzip -2cf > SolutionMonitor.gz"...
+Writing temporary file C:\\Users\\temis\\AppData\\Local\\Temp\\flntgz-106042 ...
+Done.
+
+number tracked = 19156, escaped = 17094, incomplete = 2062
+Writing data to D:\\0_Andres\\1_Universidad\\MUSE\\AAV\\Trabajos_AAV\\Trabajo 1 - Viking_files\\dp0\\FLU-1\\Fluent\\SYS-1.1.ip ...
+	x-coord
+	y-coord
+	z-coord
+	pressure
+	x-velocity
+	y-velocity
+	z-velocity
+	temperature
+	k
+	omega
+Done.
+
+Writing to temis:"D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU-1\Fluent\SYS-1.1-2.cas.h5" in NODE0 mode and compression level 1 ...
+  Writing mesh ...
+      425730 cells,     1 zone  ...
+      930098 faces,     5 zones ...
+      122897 nodes,     1 zone  ...
+  Done.
+Done.
+
+Writing to temis:"D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU-1\Fluent\SYS-1.1-2-02002.dat.h5" in NODE0 mode and compression level 1 ...
+  Writing results.
+Done.
+
+Performance Timer for 1 iterations on 3 compute nodes
+  Average wall-clock time per iteration:              2.004 sec
+  Global reductions per iteration:                      166 ops
+  Global reductions time per iteration:               0.000 sec (0.0%)
+  Message count per iteration:                         1583 messages
+  Data transfer per iteration:                       22.291 MB
+  LE solves per iteration:                                3 solves
+  LE wall-clock time per iteration:                   0.807 sec (40.3%)
+  LE global solves per iteration:                         1 solves
+  LE global wall-clock time per iteration:            0.001 sec (0.0%)
+  LE global matrix maximum size:                         9
+  AMG cycles per iteration:                           3.000 cycles
+  Relaxation sweeps per iteration:                      170 sweeps
+  Relaxation exchanges per iteration:                     0 exchanges
+  LE early protections (stall) per iteration:           0.000 times
+  LE early protections (divergence) per iteration:      0.000 times
+  Total SVARS touched:                              383
+
+  Total wall-clock time:                              2.004 sec
+
