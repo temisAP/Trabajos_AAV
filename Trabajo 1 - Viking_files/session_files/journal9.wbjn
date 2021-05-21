@@ -1,0 +1,47 @@
+# encoding: utf-8
+# 2021 R1
+SetScriptVersion(Version="21.1.216")
+system1 = GetSystem(Name="FLU 7")
+system2 = GetSystem(Name="Geom 2")
+system3 = GetSystem(Name="SYS 2")
+system4 = GetSystem(Name="FLU 2")
+system5 = GetSystem(Name="SYS 7")
+CopySystems(
+    Systems=[system1, system2, system3, system4, system5],
+    KeepConnections=True)
+system6 = GetSystem(Name="Geom 7")
+system6.DisplayText = "Alpha 7.5º"
+system7 = GetSystem(Name="SYS 10")
+system7.DisplayText = "Mesh"
+system8 = GetSystem(Name="SYS 11")
+system8.DisplayText = "Refinado"
+system9 = GetSystem(Name="FLU 11")
+system9.DisplayText = "Fluent"
+system10 = GetSystem(Name="FLU 10")
+system10.DisplayText = "Fluent"
+solutionComponent1 = system10.GetComponent(Name="Solution")
+solutionComponent1.Refresh()
+solution1 = system10.GetContainer(ComponentName="Solution")
+solution1.Edit()
+setup1 = system10.GetContainer(ComponentName="Setup")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+solutionComponent1.Refresh()
+setup1.SendCommand(Command='/file/set-tui-version "21.1"')
+geometry1 = system6.GetContainer(ComponentName="Geometry")
+geometry1.Edit()
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*FileMenu*Close Fluent")')
+Save(Overwrite=True)
+geometry1.Exit()
+meshComponent1 = system8.GetComponent(Name="Mesh")
+meshComponent1.Refresh()
+meshComponent1.Update(AllDependencies=True)
+solutionComponent1.Update(AllDependencies=True)
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+setup1.SendCommand(Command='/file/set-tui-version "21.1"')
+solution1.Edit()
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+setup1.SendCommand(Command='/file/set-tui-version "21.1"(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Solution|Report Definitions|cm"))')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Solution|Report Definitions|cm"))(cx-gui-do cx-activate-item "NavigationPane*List_Tree1")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Solution|Report Definitions|cm"))(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Solution|Report Definitions|cm"))(cx-gui-do cx-activate-item "Moment Report Definition*PanelButtons*PushButton2(Cancel)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*FileMenu*Close Fluent")(cx-gui-do cx-activate-item "Settings have changed!*PanelButtons*PushButton1(OK)")')
+Save(Overwrite=True)
