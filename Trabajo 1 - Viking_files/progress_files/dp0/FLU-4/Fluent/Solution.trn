@@ -1,0 +1,266 @@
+
+Build Time: Nov 20 2020 15:49:04 EST 
+Executable Path: D:/Archivos_de_programa/ANSYS/ANSYS Inc/ANSYS Student/v211/fluent/ntbin/win64/fluent.exe
+
+-------------------------------------------------------------------------------
+ID    Hostname  Core  O.S.         PID    Vendor                          
+-------------------------------------------------------------------------------
+n2    temis     3/8  Windows-x64  8644   Intel(R) Core(TM) i7-8550U      
+n1    temis     2/8  Windows-x64  8708   Intel(R) Core(TM) i7-8550U      
+n0*   temis     1/8  Windows-x64  12932  Intel(R) Core(TM) i7-8550U      
+host  temis          Windows-x64  1852   Intel(R) Core(TM) i7-8550U      
+
+MPI Option Selected: intel
+Selected system interconnect: default
+-------------------------------------------------------------------------------
+Reading "D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\SYS-4\MECH\SYS-4.1.msh"...
+Buffering for file scan...
+
+  112402 nodes, binary.
+   11284 nodes, binary.
+  915214 mixed interior faces, zone  1, binary.
+    9485 mixed symmetry faces, zone  5, binary.
+    6971 triangular wall faces, zone  6, binary.
+    1424 triangular velocity-inlet faces, zone  7, binary.
+    1384 triangular pressure-outlet faces, zone  8, binary.
+  427568 mixed cells, zone  2, binary.
+
+
+Building...
+     mesh
+	auto partitioning mesh by Metis (fast),
+	distributing mesh
+		parts...,
+		faces...,
+		nodes...,
+		cells...,
+        bandwidth reduction using Reverse Cuthill-McKee: 121833/2065 = 58.999
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	outlet
+	inlet
+	capsula
+	symmetry
+	solid
+	interior-solidSetting solid (mixture) ... Done.
+
+Applying mesh operation "Change Zone Type"
+
+Applying mesh operation "Change Zone Type [ 2 ]"
+
+Applying mesh operation "Change Zone Type [ 3 ]"
+ Setting zone id of solid to 2.
+ Setting zone id of outlet to 8.
+ Setting zone id of inlet to 7.
+ Setting zone id of interior-solid to 1.
+ Setting zone id of symmetry to 5.
+ Setting zone id of capsula to 6.
+Done.
+Setting solid (mixture) ... Done.
+Setting outlet (mixture) ... Done.
+Setting inlet (mixture) ... Done.
+Setting interior-solid (mixture) ... Done.
+Setting symmetry (mixture) ... Done.
+Setting capsula (mixture) ... Done.
+
+     parallel,
+Done.
+
+Preparing mesh for display...
+Done.
+"Updating Setup cell..."
+"Updating Solution cell..."
+Initialization based on settings...
+Fast-loading "D:\Archivos_de_programa\ANSYS\ANSYS Inc\ANSYS Student\v211\fluent\fluent21.1.0\\addons\afd\lib\hdfio.bin"
+Done.
+
+Writing to temis:"D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU-4\Fluent\SYS-4.1-Setup-Output.cas.h5" in NODE0 mode and compression level 1 ...
+  Writing mesh ...
+      427568 cells,     1 zone  ...
+      934478 faces,     5 zones ...
+      123686 nodes,     1 zone  ...
+  Done.
+Done.
+
+Creating multigrid levels... 
+ Grid Level  0: 427568 cells, 934478 faces, 123686 nodes;   3 clusters
+ Grid Level  1:  19154 cells, 322033 faces, 123686 nodes;   3 clusters
+ Grid Level  1:  19154 cells, 105176 faces,      0 nodes
+ Grid Level  2:   4067 cells, 227016 faces, 123686 nodes;   3 clusters
+ Grid Level  2:   4067 cells,  27468 faces,      0 nodes
+ Grid Level  3:    989 cells, 173282 faces, 123686 nodes;   3 clusters
+ Grid Level  3:    989 cells,   7425 faces,      0 nodes
+Done.
+
+
+FMG: Converge FAS on level 3 [eps = 0.001000, max-iter=400]
+.......... -> Normalized residual = 0.384343 
+.......... -> Normalized residual = 0.173394 
+.......... -> Normalized residual = 0.0846283 
+.......... -> Normalized residual = 0.0541734 
+.......... -> Normalized residual = 0.0296527 
+.......... -> Normalized residual = 0.018983 
+.......... -> Normalized residual = 0.014358 
+.......... -> Normalized residual = 0.0114336 
+.......... -> Normalized residual = 0.00901317 
+.......... -> Normalized residual = 0.00708284 
+.......... -> Normalized residual = 0.00553828 
+.......... -> Normalized residual = 0.00438305 
+.......... -> Normalized residual = 0.00354784 
+.......... -> Normalized residual = 0.00293596 
+.......... -> Normalized residual = 0.00247174 
+.......... -> Normalized residual = 0.00210379 
+.......... -> Normalized residual = 0.00180404 
+.......... -> Normalized residual = 0.00155931 
+.......... -> Normalized residual = 0.00135943 
+.......... -> Normalized residual = 0.0011959 
+.......... -> Normalized residual = 0.00106132 
+......
+ FMG: FAS converged.
+
+FMG: Finished work on level = 3 
+
+FMG: Interpolate solution on next level .. . end 
+
+
+FMG: Converge FAS on level 2 [eps = 0.001000, max-iter=200]
+.......... -> Normalized residual = 0.0657419 
+.......... -> Normalized residual = 0.0223013 
+.......... -> Normalized residual = 0.014079 
+.......... -> Normalized residual = 0.0101331 
+.......... -> Normalized residual = 0.0078505 
+.......... -> Normalized residual = 0.00564792 
+.......... -> Normalized residual = 0.00425195 
+.......... -> Normalized residual = 0.00334176 
+.......... -> Normalized residual = 0.00269582 
+.......... -> Normalized residual = 0.00221525 
+.......... -> Normalized residual = 0.00184064 
+.......... -> Normalized residual = 0.00153878 
+.......... -> Normalized residual = 0.00129086 
+.......... -> Normalized residual = 0.00108512 
+.....
+ FMG: FAS converged.
+
+FMG: Finished work on level = 2 
+
+FMG: Interpolate solution on next level .. . end 
+
+
+FMG: Converge FAS on level 1 [eps = 0.001000, max-iter=100]
+.......... -> Normalized residual = 0.0775608 
+.......... -> Normalized residual = 0.0310549 
+.......... -> Normalized residual = 0.0131386 
+.......... -> Normalized residual = 0.00866859 
+.......... -> Normalized residual = 0.00649815 
+.......... -> Normalized residual = 0.00596376 
+.......... -> Normalized residual = 0.00296067 
+.......... -> Normalized residual = 0.00391806 
+.......... -> Normalized residual = 0.00380647 
+.......... -> Normalized residual = 0.00186481 
+
+ FMG: FAS reached maximum iterations. 
+ Normalized residual = 0.00186481 
+
+FMG: Finished work on level = 1 
+
+FMG: Interpolate solution on next level .. . end 
+0.
+ time step reduced in 44 cells due to excessive temperature change
+->1.->2.->3.<<<
+
+ turbulent viscosity limited to viscosity ratio of 1.000000e+05 in 40 cells 
+
+ turbulent viscosity limited to viscosity ratio of 1.000000e+05 in 42 cells 
+
+  iter       t_max       p_max          cm          cl          cd     time/iter
+
+ turbulent viscosity limited to viscosity ratio of 1.000000e+05 in 44 cells 
+     1  5.0352e+03  2.9315e+05 -5.7367e-02  4.7071e-01  7.3778e-01  0:00:00    0
+Registering ReportDefFiles, ("D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU-4\Fluent\.\\cd-rfile.out" "D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU-4\Fluent\.\\cl-rfile.out" "D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU-4\Fluent\.\\cm-rfile.out" "D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU-4\Fluent\.\\p_max-rfile.out" "D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU-4\Fluent\.\\t_max-rfile.out")
+Writing "| gzip -2cf > SolutionMonitor.gz"...
+Writing temporary file C:\\Users\\temis\\AppData\\Local\\Temp\\flntgz-18522 ...
+Done.
+
+Cannot figure which cell particle is going to -- ABORT
+Cannot find intersecting face for particle 1396 step 81 -- ABORT at (3.099097e-01 -3.005168e-01 -2.107461e+00) in cell 108174 , t-id 2, next_pos = (3.099097e-01 -3.005168e-01 -2.107461e+00)
+Cannot figure which cell particle is going to -- ABORT
+Cannot find intersecting face for particle 5800 step 80 -- ABORT at (1.271761e-01 -3.010362e-02 -1.962585e+00) in cell 118650 , t-id 2, next_pos = (1.271761e-01 -3.010362e-02 -1.962585e+00)
+Cannot figure which cell particle is going to -- ABORT
+Cannot find intersecting face for particle 1321 step 80 -- ABORT at (7.310582e-02 -1.575029e-02 -1.952169e+00) in cell 120307 , t-id 2, next_pos = (7.310582e-02 -1.575029e-02 -1.952169e+00)
+number tracked = 19264, escaped = 16352, aborted = 17, incomplete = 2895
+Cannot figure which cell particle is going to -- ABORT
+Cannot find intersecting face for particle 3220 step 81 -- ABORT at (-7.492293e-01 6.646221e-01 -8.129290e-01) in cell 54199 , t-id 2, next_pos = (-7.492293e-01 6.646221e-01 -8.129290e-01)
+Cannot figure which cell particle is going to -- ABORT
+Cannot find intersecting face for particle 373 step 108 -- ABORT at (-7.493780e-01 6.646697e-01 -8.125654e-01) in cell 54199 , t-id 2, next_pos = (-7.493780e-01 6.646697e-01 -8.125654e-01)
+Cannot figure which cell particle is going to -- ABORT
+Cannot find intersecting face for particle 5733 step 81 -- ABORT at (-2.901379e-01 3.169177e-01 -1.617205e+00) in cell 57179 , t-id 2, next_pos = (-2.901379e-01 3.169177e-01 -1.617205e+00)
+Cannot figure which cell particle is going to -- ABORT
+Cannot find intersecting face for particle 3196 step 140 -- ABORT at (-3.869757e-01 3.405311e-01 -1.551026e+00) in cell 57246 , t-id 2, next_pos = (-3.869757e-01 3.405311e-01 -1.551026e+00)
+Cannot figure which cell particle is going to -- ABORT
+Cannot find intersecting face for particle 2400 step 81 -- ABORT at (-3.863577e-01 3.386170e-01 -1.552747e+00) in cell 57246 , t-id 2, next_pos = (-3.863577e-01 3.386170e-01 -1.552747e+00)
+Cannot figure which cell particle is going to -- ABORT
+Cannot find intersecting face for particle 5220 step 81 -- ABORT at (-8.116021e-01 6.329690e-01 -6.860017e-01) in cell 57369 , t-id 2, next_pos = (-8.116021e-01 6.329690e-01 -6.860017e-01)
+Cannot figure which cell particle is going to -- ABORT
+Cannot find intersecting face for particle 4314 step 182 -- ABORT at (-3.869885e-01 3.403672e-01 -1.551124e+00) in cell 57246 , t-id 2, next_pos = (-3.869885e-01 3.403672e-01 -1.551124e+00)
+Cannot figure which cell particle is going to -- ABORT
+Cannot find intersecting face for particle 1944 step 118 -- ABORT at (-3.878956e-01 3.387057e-01 -1.551553e+00) in cell 57246 , t-id 2, next_pos = (-3.878956e-01 3.387057e-01 -1.551553e+00)
+Cannot figure which cell particle is going to -- ABORT
+Cannot find intersecting face for particle 1909 step 81 -- ABORT at (-4.605190e-01 3.063586e-01 -1.484415e+00) in cell 60475 , t-id 2, next_pos = (-4.605190e-01 3.063586e-01 -1.484415e+00)
+Cannot figure which cell particle is going to -- ABORT
+Cannot find intersecting face for particle 2211 step 80 -- ABORT at (-8.850991e-01 6.685765e-01 -2.217359e-01) in cell 71395 , t-id 2, next_pos = (-8.850991e-01 6.685765e-01 -2.217359e-01)
+Cannot figure which cell particle is going to -- ABORT
+Cannot find intersecting face for particle 3880 step 80 -- ABORT at (-8.816200e-01 6.588746e-01 -1.949976e-01) in cell 73194 , t-id 2, next_pos = (-8.816200e-01 6.588746e-01 -1.949976e-01)
+Cannot figure which cell particle is going to -- ABORT
+Cannot find intersecting face for particle 2997 step 231 -- ABORT at (-8.829467e-01 7.637930e-01 -3.322037e-02) in cell 76120 , t-id 2, next_pos = (-8.829467e-01 7.637930e-01 -3.322037e-02)
+Cannot figure which cell particle is going to -- ABORT
+Cannot find intersecting face for particle 4822 step 274 -- ABORT at (3.424502e+00 1.129147e+00 -3.855001e-04) in cell 12755 , t-id 2, next_pos = (3.424502e+00 1.129147e+00 -3.855001e-04)
+Cannot figure which cell particle is going to -- ABORT
+Cannot find intersecting face for particle 7804 step 359 -- ABORT at (3.424502e+00 1.129147e+00 -3.855001e-04) in cell 12755 , t-id 2, next_pos = (3.424502e+00 1.129147e+00 -3.855001e-04)
+Writing data to D:\\0_Andres\\1_Universidad\\MUSE\\AAV\\Trabajos_AAV\\Trabajo 1 - Viking_files\\dp0\\FLU-4\\Fluent\\SYS-4.1.ip ...
+	x-coord
+	y-coord
+	z-coord
+	pressure
+	x-velocity
+	y-velocity
+	z-velocity
+	temperature
+	k
+	omega
+Done.
+
+Writing to temis:"D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU-4\Fluent\SYS-4.1-1.cas.h5" in NODE0 mode and compression level 1 ...
+  Writing mesh ...
+      427568 cells,     1 zone  ...
+      934478 faces,     5 zones ...
+      123686 nodes,     1 zone  ...
+  Done.
+Done.
+
+Writing to temis:"D:\0_Andres\1_Universidad\MUSE\AAV\Trabajos_AAV\Trabajo 1 - Viking_files\dp0\FLU-4\Fluent\SYS-4.1-1-00001.dat.h5" in NODE0 mode and compression level 1 ...
+  Writing results.
+Done.
+
+Performance Timer for 2 iterations on 3 compute nodes
+  Average wall-clock time per iteration:             12.967 sec
+  Global reductions per iteration:                     7694 ops
+  Global reductions time per iteration:               0.000 sec (0.0%)
+  Message count per iteration:                        51002 messages
+  Data transfer per iteration:                       15.310 MB
+  LE solves per iteration:                                2 solves
+  LE wall-clock time per iteration:                   0.434 sec (3.4%)
+  LE global solves per iteration:                         0 solves
+  LE global wall-clock time per iteration:            0.000 sec (0.0%)
+  LE global matrix maximum size:                        10
+  AMG cycles per iteration:                           2.500 cycles
+  Relaxation sweeps per iteration:                       89 sweeps
+  Relaxation exchanges per iteration:                     0 exchanges
+  LE early protections (stall) per iteration:           0.000 times
+  LE early protections (divergence) per iteration:      0.000 times
+  Total SVARS touched:                              402
+
+  Total wall-clock time:                             25.933 sec
+
