@@ -50,13 +50,11 @@ DATA.cd_a = polyfit(DATA.angulo,DATA.cd,n);
 DATA.cl_a = polyfit(DATA.angulo,DATA.cl,n);
 DATA.cm_a = polyfit(DATA.angulo,DATA.cm,n);
 
-try
-    DATA.RMSE_cd = sqrt(mean((DATA.cd_a - DATA.cd).^2));
-    DATA.RMSE_cl = sqrt(mean((DATA.cd_a - DATA.cd).^2));
-    DATA.RMSE_cm = sqrt(mean((DATA.cd_a - DATA.cd).^2));
-catch 
-    disp('error')
-end
+DATA.RMSE_cd = sqrt(mean((polyval(DATA.cd_a,DATA.angulo) - DATA.cd).^2));
+DATA.RMSE_cl = sqrt(mean((polyval(DATA.cl_a,DATA.angulo) - DATA.cl).^2));
+DATA.RMSE_cm = sqrt(mean((polyval(DATA.cm_a,DATA.angulo) - DATA.cm).^2));
+
+
 
 % Segundo plot
 
@@ -91,16 +89,18 @@ end
 
 if eficiencia == 'y'
     h = figure(fig); set(h, 'Visible', 'off')
+    
     hold on
     plot(DATA.angulo, DATA.E, 'o-',...
         'LineWidth', 1.5)
     grid on; box on;
-    ylabel('$E$','Interpreter','latex');
+    ylabel({'$E$'},'Interpreter','latex');
     xlabel("$\alpha$ [$\mathrm{^o}$]",'Interpreter','latex');
     Save_as_PDF(h, ['Figures/','eficiencia'],'horizontal', 0, 0);
     close
     fig = fig+1;
 end
+
 
 %% Presión y temperatura
 
