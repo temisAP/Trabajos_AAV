@@ -11,17 +11,17 @@ DATA = struct();
 data = xlsread(filename);
 
 % Assign struct fields
-DATA.angulo = data(1,2:end);
+DATA.angulo = data(1,:);
 
-DATA.cd = data(2,2:end);
-DATA.cl = data(3,2:end);
-DATA.cm = data(4,2:end);
+DATA.cd = data(2,:);
+DATA.cl = data(3,:);
+DATA.cm = data(4,:);
 
-DATA.p_max = data(5,2:end);
-DATA.t_max = data(6,2:end);
+DATA.p_max = data(5,:);
+DATA.t_max = data(6,:);
 
-DATA.E = data(7,2:end);
-DATA.p_norm = data(8,2:end);
+DATA.E = data(7,:);
+DATA.p_norm = data(8,:);
 
 
 save('DATA.mat', 'DATA');

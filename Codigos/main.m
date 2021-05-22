@@ -47,8 +47,8 @@ end
 n=2;
 
 DATA.cd_a = polyfit(DATA.angulo,DATA.cd,n);
-DATA.cl_a = polyfit(DATA.angulo,DATA.cd,n);
-DATA.cm_a = polyfit(DATA.angulo,DATA.cd,n);
+DATA.cl_a = polyfit(DATA.angulo,DATA.cl,n);
+DATA.cm_a = polyfit(DATA.angulo,DATA.cm,n);
 
 try
     DATA.RMSE_cd = sqrt(mean((DATA.cd_a - DATA.cd).^2));
@@ -109,12 +109,12 @@ if eficiencia == 'y'
     hold on
     
     yyaxis left
-    plot(DATA.angulo, DATA.p_norm, 'o-',...
+    plot(DATA.angulo, DATA.p_norm, '-',...
         'LineWidth', 1.5)
     ylabel('$P_{norm}$','Interpreter','latex');
     
     yyaxis right
-    plot(DATA.angulo, DATA.t_max, 'o-',...
+    plot(DATA.angulo, DATA.t_max, '-',...
         'LineWidth', 1.5)
     ylabel('$T$','Interpreter','latex');
         
