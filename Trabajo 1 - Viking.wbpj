@@ -2,10 +2,10 @@
 <Storage>
   <Project Version="9.1">
     <base-designpoint-name valType="String">0</base-designpoint-name>
-    <timestamp-max valType="Int64">8529</timestamp-max>
+    <timestamp-max valType="Int64">8747</timestamp-max>
     <framework-build-version valType="String">21.1.216.0</framework-build-version>
     <external-version-string valType="String">2021 R1</external-version-string>
-    <last-saved-utc valType="String">05/21/2021 22:44:07</last-saved-utc>
+    <last-saved-utc valType="String">05/22/2021 09:18:18</last-saved-utc>
     <managed-categories valType="String">[report, misc, progress]</managed-categories>
     <logHistory valType="StringArray">
       <ArrayEntry Index="0">Home@DESKTOP-99IT6RQ:C:\Users\jsmve\AppData\Local\Temp\WorkbenchLogs\CoreEvents8664.log</ArrayEntry>
@@ -16,6 +16,7 @@
       <ArrayEntry Index="5">Home@DESKTOP-99IT6RQ:C:\Users\jsmve\AppData\Local\Temp\WorkbenchLogs\CoreEvents13660.log</ArrayEntry>
       <ArrayEntry Index="6">Home@DESKTOP-99IT6RQ:C:\Users\jsmve\AppData\Local\Temp\WorkbenchLogs\CoreEvents10144.log</ArrayEntry>
       <ArrayEntry Index="7">temis@TEMIS:C:\Users\temis\AppData\Local\Temp\WorkbenchLogs\CoreEvents11848.log</ArrayEntry>
+      <ArrayEntry Index="8">temis@TEMIS:C:\Users\temis\AppData\Local\Temp\WorkbenchLogs\CoreEvents7296.log</ArrayEntry>
     </logHistory>
     <expression-scope-container valType="String">Parameters</expression-scope-container>
     <project-type valType="String">WB2</project-type>
@@ -233,7 +234,16 @@
 "99046239-0d76-4c40-ae4e-3971033bd671": "/FileContainer/FileReference:F131",
 "2e0c9fe2-f95b-4569-b3fa-426917cbd020": "/FileContainer/FileReference:F125",
 "49e8e6cb-38fa-4783-9bc4-93203151f210": "/FileTypesContainer/FileType:FluentResidualFile",
-"52faa424-2805-41bd-8a83-dd513cedd2bb": "/FileTypesContainer/FileType:FLUENTSolutionTranscript"
+"52faa424-2805-41bd-8a83-dd513cedd2bb": "/FileTypesContainer/FileType:FLUENTSolutionTranscript",
+"722653e3-d799-4e8c-85b0-920758c3dfdb": "/FileContainer/FileReference:F132",
+"0aabad8a-95ef-4d7b-b9c2-b91d3e3f64db": "/FileContainer/FileReference:F133",
+"413c77c9-846b-49e1-853c-66e75c57eec7": "/FileContainer/FileReference:F134",
+"f69b7eed-40cb-4c3b-b65d-faf5314a09ac": "/FileTypesContainer/FileType:FLUENTReportDefFiles",
+"c00d9939-b496-4df0-ad66-911ca1792f82": "/Parameters/Parameter:P1",
+"c898d5e6-c542-4cf0-ab26-ca2c00cc892f": "/Parameters/Parameter:P2",
+"a88d85ea-15ae-44d0-9d9f-011edd3a77d6": "/Parameters/Parameter:P3",
+"b0977bdb-54d6-4e01-8b16-435961d12101": "/Parameters/Parameter:P4",
+"9c0c10d7-ac74-4395-876f-07d773a39fc7": "/Parameters/Parameter:P5"
 }</ReferenceList>
       </ProjectReferenceList>
       <DesignPointReferenceListCollection>
@@ -428,7 +438,12 @@
 "55fbff12-3bf9-4942-9d53-cf5c5579023a": "/Solution 10/ConvergenceChart:User-Defined",
 "a3f09c7d-bad5-40fb-baf1-94604a0a0088": "/Solution 10/ConvergenceChart:User-Defined 1",
 "fb9e4da2-91cf-490d-998f-348e34667a96": "/Solution 10/ConvergenceChart:User-Defined 2",
-"84e3e80b-f2c4-438e-9ab3-160ea58ec32c": "/Solution 10/ConvergenceChart:User-Defined 3"
+"84e3e80b-f2c4-438e-9ab3-160ea58ec32c": "/Solution 10/ConvergenceChart:User-Defined 3",
+"a4dd0ab9-8a37-4bba-a63b-2cb62aa0ef2f": "/Solution 10/ParameterAdapter2:FluentParameter",
+"220d53fd-ff7b-4cfb-b685-91c5e1256a5a": "/Solution 10/ParameterAdapter4:FluentParameter",
+"33481262-6b86-4df3-920d-f6d63196e762": "/Solution 10/ParameterAdapter6:FluentParameter",
+"ac57d462-5613-479c-b69c-d4f58c634490": "/Solution 10/ParameterAdapter8:FluentParameter",
+"e0548f95-13f2-47e0-89fa-2d59a88627ad": "/Solution 10/ParameterAdapter10:FluentParameter"
 }</ReferenceList>
         </DesignPointReferenceList>
       </DesignPointReferenceListCollection>
@@ -459,7 +474,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 8507, "Input": 1410, "Output": 1410}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 8730, "Input": 1410, "Output": 1410}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
       <Object Name="/FileContainer/FileReference:F1" Version="1.0">
@@ -470,7 +485,7 @@
       <Object Name="/FileContainer/FileReference:F2" Version="1.0">
         <class-type valType="String">FileReference</class-type>
         <object-name valType="String">F2</object-name>
-        <member-data valType="String">{"DisplayText": "act.dat", "FileType": $$74feb79a-b153-4b4e-a306-cad30bb84d94, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\act.dat", "ReferenceCount": 77}</member-data>
+        <member-data valType="String">{"DisplayText": "act.dat", "FileType": $$74feb79a-b153-4b4e-a306-cad30bb84d94, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\act.dat", "ReferenceCount": 79}</member-data>
       </Object>
       <Object Name="/FileContainer/FileReference:F3" Version="1.0">
         <class-type valType="String">FileReference</class-type>
@@ -960,12 +975,27 @@
       <Object Name="/FileContainer/FileReference:F128" Version="1.0">
         <class-type valType="String">FileReference</class-type>
         <object-name valType="String">F128</object-name>
-        <member-data valType="String">{"DisplayText": "SYS-11.1-1.cas.h5", "FileType": $$5f63cdb0-3278-44ec-a040-79faf19a925a, "DependentFiles": [$$92cf8a9a-b6a3-4514-a2e6-a6a36145414e], "ContainerAssociations": ["Solution 10"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FLU-10\Fluent\SYS-11.1-1.cas.h5", "ReferenceCount": 1}</member-data>
+        <member-data valType="String">{"DisplayText": "SYS-11.1-1.cas.h5", "FileType": $$5f63cdb0-3278-44ec-a040-79faf19a925a, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": True, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FLU-10\Fluent\SYS-11.1-1.cas.h5", "ReferenceCount": 1}</member-data>
       </Object>
       <Object Name="/FileContainer/FileReference:F129" Version="1.0">
         <class-type valType="String">FileReference</class-type>
         <object-name valType="String">F129</object-name>
-        <member-data valType="String">{"DisplayText": "SYS-11.1-1-03000.dat.h5", "FileType": $$81726ab3-2b0c-49aa-82c9-e8ba9695a170, "DependentFiles": [], "ContainerAssociations": ["Solution 10"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FLU-10\Fluent\SYS-11.1-1-03000.dat.h5", "ReferenceCount": 1}</member-data>
+        <member-data valType="String">{"DisplayText": "SYS-11.1-1-03000.dat.h5", "FileType": $$81726ab3-2b0c-49aa-82c9-e8ba9695a170, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": True, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FLU-10\Fluent\SYS-11.1-1-03000.dat.h5", "ReferenceCount": 1}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F132" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F132</object-name>
+        <member-data valType="String">{"DisplayText": "p_max-rfile.out", "FileType": $$f69b7eed-40cb-4c3b-b65d-faf5314a09ac, "DependentFiles": [], "ContainerAssociations": ["Setup 10"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FLU-10\Fluent\p_max-rfile.out", "ReferenceCount": 1}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F133" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F133</object-name>
+        <member-data valType="String">{"DisplayText": "SYS-11.1-2.cas.h5", "FileType": $$5f63cdb0-3278-44ec-a040-79faf19a925a, "DependentFiles": [$$413c77c9-846b-49e1-853c-66e75c57eec7], "ContainerAssociations": ["Solution 10"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FLU-10\Fluent\SYS-11.1-2.cas.h5", "ReferenceCount": 1}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F134" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F134</object-name>
+        <member-data valType="String">{"DisplayText": "SYS-11.1-2-05000.dat.h5", "FileType": $$81726ab3-2b0c-49aa-82c9-e8ba9695a170, "DependentFiles": [], "ContainerAssociations": ["Solution 10"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FLU-10\Fluent\SYS-11.1-2-05000.dat.h5", "ReferenceCount": 1}</member-data>
       </Object>
     </Container>
     <Container Name="Messages" Version="1.0">
@@ -984,13 +1014,13 @@
       <maxUpdateOrder valType="Double">1</maxUpdateOrder>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 8512, "Input": 8249, "Output": 1414}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 8706, "Input": 8711, "Output": 1414}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Parameters/DesignPoint:0" Version="1.0">
         <class-type valType="String">DesignPoint</class-type>
         <object-name valType="String">0</object-name>
-        <member-data valType="String">{"DisplayText": "DP 0", "JustDuplicated": False, "PartiallyRetainedData": [], "ValidRetainedData": [], "ErrorsOnLastUpdate": {}, "LastUpdateInformation": {"DidUpdate": "True", "DidPreRsmUpdate": "False", "UpdatedComponents": "Setup 10 in FLU 10, Solution 10 in FLU 10"}, "Parameters": {}, "ParameterErrors": {}, "CurrentValues": {}, "ParameterStatus": {}, "Note": None, "IsUpToDate": False, "Exported": True, "Retained": True, "CurrentStateExported": False, "IsDataModelValid": True, "HasRetainedData": True, "HasBeenSolved": True, "UpdateOrder": 1}</member-data>
+        <member-data valType="String">{"DisplayText": "DP 0", "JustDuplicated": False, "PartiallyRetainedData": [], "ValidRetainedData": [], "ErrorsOnLastUpdate": {}, "LastUpdateInformation": {"DidUpdate": "True", "DidPreRsmUpdate": "False", "UpdatedComponents": "Setup 10 in FLU 10, Solution 10 in FLU 10"}, "Parameters": {}, "ParameterErrors": {}, "CurrentValues": {"$$c00d9939-b496-4df0-ad66-911ca1792f82": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "1.5529944"}, "$$c898d5e6-c542-4cf0-ab26-ca2c00cc892f": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.19159885"}, "$$a88d85ea-15ae-44d0-9d9f-011edd3a77d6": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "-0.013616745"}, "$$b0977bdb-54d6-4e01-8b16-435961d12101": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "806.02185 [K]"}, "$$9c0c10d7-ac74-4395-876f-07d773a39fc7": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "165738.92 [Pa]"}}, "ParameterStatus": {"$$c00d9939-b496-4df0-ad66-911ca1792f82": "UpToDate", "$$c898d5e6-c542-4cf0-ab26-ca2c00cc892f": "UpToDate", "$$a88d85ea-15ae-44d0-9d9f-011edd3a77d6": "UpToDate", "$$b0977bdb-54d6-4e01-8b16-435961d12101": "UpToDate", "$$9c0c10d7-ac74-4395-876f-07d773a39fc7": "UpToDate"}, "Note": None, "IsUpToDate": False, "Exported": True, "Retained": True, "CurrentStateExported": False, "IsDataModelValid": True, "HasRetainedData": True, "HasBeenSolved": True, "UpdateOrder": 1}</member-data>
         <properties-setByUserFlag-data valType="String">["IsDataModelValid"]</properties-setByUserFlag-data>
       </Object>
       <Object Name="/Parameters/DesignPointReportSetting:Design Points Report Setting" Version="1.0">
@@ -998,7 +1028,68 @@
         <object-name valType="String">Design Points Report Setting</object-name>
         <member-data valType="String">{"DisplayText": "Design Points Report Setting", "DesignPointReportImage": "None"}</member-data>
       </Object>
-      <ParameterToPropertyMap />
+      <Object Name="/Parameters/Parameter:P1" Version="1.0">
+        <class-type valType="String">Parameter</class-type>
+        <object-name valType="String">P1</object-name>
+        <member-data valType="String">{"DisplayText": "cd-op", "PersistedNamedValueEntityReference": None, "Expression": None, "Usage": "DirectOutput", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "1.5529944"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Output", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
+      </Object>
+      <Object Name="/Parameters/Parameter:P2" Version="1.0">
+        <class-type valType="String">Parameter</class-type>
+        <object-name valType="String">P2</object-name>
+        <member-data valType="String">{"DisplayText": "cl-op", "PersistedNamedValueEntityReference": None, "Expression": None, "Usage": "DirectOutput", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.19159885"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Output", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
+      </Object>
+      <Object Name="/Parameters/Parameter:P3" Version="1.0">
+        <class-type valType="String">Parameter</class-type>
+        <object-name valType="String">P3</object-name>
+        <member-data valType="String">{"DisplayText": "cm-op", "PersistedNamedValueEntityReference": None, "Expression": None, "Usage": "DirectOutput", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "-0.013616745"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Output", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
+      </Object>
+      <Object Name="/Parameters/Parameter:P4" Version="1.0">
+        <class-type valType="String">Parameter</class-type>
+        <object-name valType="String">P4</object-name>
+        <member-data valType="String">{"DisplayText": "t_max-op", "PersistedNamedValueEntityReference": None, "Expression": None, "Usage": "DirectOutput", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "806.02185 [K]"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Output", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Temperature"}}</member-data>
+      </Object>
+      <Object Name="/Parameters/Parameter:P5" Version="1.0">
+        <class-type valType="String">Parameter</class-type>
+        <object-name valType="String">P5</object-name>
+        <member-data valType="String">{"DisplayText": "p_max-op", "PersistedNamedValueEntityReference": None, "Expression": None, "Usage": "DirectOutput", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "165738.92 [Pa]"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Output", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Pressure"}}</member-data>
+      </Object>
+      <ParameterToPropertyMap>
+        <Parameter Name="/Parameters/Parameter:P1">
+          <ParameterReference valType="String">c00d9939-b496-4df0-ad66-911ca1792f82</ParameterReference>
+          <LinkedEntityProperty>
+            <EntityReference valType="String">a4dd0ab9-8a37-4bba-a63b-2cb62aa0ef2f</EntityReference>
+            <Property valType="String">Value</Property>
+          </LinkedEntityProperty>
+        </Parameter>
+        <Parameter Name="/Parameters/Parameter:P2">
+          <ParameterReference valType="String">c898d5e6-c542-4cf0-ab26-ca2c00cc892f</ParameterReference>
+          <LinkedEntityProperty>
+            <EntityReference valType="String">220d53fd-ff7b-4cfb-b685-91c5e1256a5a</EntityReference>
+            <Property valType="String">Value</Property>
+          </LinkedEntityProperty>
+        </Parameter>
+        <Parameter Name="/Parameters/Parameter:P3">
+          <ParameterReference valType="String">a88d85ea-15ae-44d0-9d9f-011edd3a77d6</ParameterReference>
+          <LinkedEntityProperty>
+            <EntityReference valType="String">33481262-6b86-4df3-920d-f6d63196e762</EntityReference>
+            <Property valType="String">Value</Property>
+          </LinkedEntityProperty>
+        </Parameter>
+        <Parameter Name="/Parameters/Parameter:P4">
+          <ParameterReference valType="String">b0977bdb-54d6-4e01-8b16-435961d12101</ParameterReference>
+          <LinkedEntityProperty>
+            <EntityReference valType="String">ac57d462-5613-479c-b69c-d4f58c634490</EntityReference>
+            <Property valType="String">Value</Property>
+          </LinkedEntityProperty>
+        </Parameter>
+        <Parameter Name="/Parameters/Parameter:P5">
+          <ParameterReference valType="String">9c0c10d7-ac74-4395-876f-07d773a39fc7</ParameterReference>
+          <LinkedEntityProperty>
+            <EntityReference valType="String">e0548f95-13f2-47e0-89fa-2d59a88627ad</EntityReference>
+            <Property valType="String">Value</Property>
+          </LinkedEntityProperty>
+        </Parameter>
+      </ParameterToPropertyMap>
     </Container>
     <Container Name="Schematic" Version="1.0">
       <container-type valType="String">Ansys.ProjectSchematic.ProjectSchematicAddin:Default</container-type>
@@ -1561,13 +1652,18 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 1733, "Input": 1728, "Output": 1728}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 8546, "Input": 8659, "Output": 1728}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/DpdbContainer/DpdbSettings:Dpdb Settings Entity" Version="1.0">
         <class-type valType="String">DpdbSettings</class-type>
         <object-name valType="String">Dpdb Settings Entity</object-name>
         <member-data valType="String">{"DisplayText": "Dpdb Settings Entity", "ServerUrl": "https://localhost/dcs", "ServerUserName": "dcadmin", "ServerPassword": "dcadmin", "DatabaseName": None, "StartLocalEvaluatorOnUpdate": True, "ExecutionTime": 300, "UpdateDesignPointInSteps": False}</member-data>
+      </Object>
+      <Object Name="/DpdbContainer/ConnectionInfo:ConnectionInfo" Version="1.0">
+        <class-type valType="String">ConnectionInfo</class-type>
+        <object-name valType="String">ConnectionInfo</object-name>
+        <member-data valType="String">{"DisplayText": "ConnectionInfo", "IsConnected": False, "DbName": None, "LastSyncStateId": "00000000-0000-0000-0000-000000000000", "ConnectionSettingsModified": False, "DesignPointsBeingEvaluated": [], "ParameterToDpdbId": {}, "DpReferenceToDpdbDatabaseId": {}}</member-data>
       </Object>
     </Container>
   </Containers>
